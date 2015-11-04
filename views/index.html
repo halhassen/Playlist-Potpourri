@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Online Playlist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+	<link rel="stylesheet" type="text/css" href="/css/nav.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+</head>
+<body>
+	<div ng-controller="NavController as nav">
+		<div id="bg"></div>
+		<section>
+			<nav>
+				<div></div>
+				<ul>
+					<li data-xcoord="0px" class="active">Home</li>
+					<li data-xcoord="160px">About</li>
+					<li data-xcoord="320px">Signup</li>
+					<li data-xcoord="480px">Store</li>
+				</ul>
+			</nav>
+		</section>
+		<ui-view></ui-view>
+	</div>
+	<!-- Ext Libs -->
+	<script src="angular/angular.min.js"></script>
+	<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!-- Angular Material Design -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<!-- Global Src -->
+	<script src="/javascript/app.js"></script>
+	<!-- Factories -->
+	<script src="/javascript/services/HomeFactory.js"></script>
+	<!-- Controllers -->
+	<script src="/javascript/controllers/HomeController.js"></script>
+	<script src="/javascript/controllers/NavController.js"></script>
+	<!-- jQuery -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</body>
+</html>
