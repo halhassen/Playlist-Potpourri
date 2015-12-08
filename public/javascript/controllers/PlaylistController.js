@@ -15,7 +15,7 @@
 			PlaylistFactory.createPlaylist(vm.playlist).then(function(res) {
 				vm.playlist = {};
 				$state.go('Home');
-			})
+			});
 		};
 
 		vm.deletePlaylist = function(idx) {
@@ -36,7 +36,7 @@
 			SC.oEmbed(track_url, { auto_play: true }, function(oEmbed) {
 				$scope.$apply($scope.player_html = $sce.trustAsHtml(oEmbed.html));
 			});
-		}
+		};
 
 	}
 })();

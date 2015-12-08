@@ -22,16 +22,16 @@
 				} else {
 					vm.status = $rootScope._user;
 					$state.go('Home')
-				}
-			})		
+				};
+			});	
 		};
 
 		vm.logout = function() {
-			UserFactory.logout() ;
+			UserFactory.logout();
 			vm.status = $rootScope._user;
 			$window.location.reload();
 			$state.go('Home');
-		} ;
+		};
 
-	}
+	};
 })();

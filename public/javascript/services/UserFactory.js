@@ -38,7 +38,7 @@
 				}
 			} else {
 				return false
-			}
+			};
 		};
 
 		o.register = function(user) {
@@ -82,7 +82,7 @@
 				case 3: { output += '='; break; }
 				default: 
 				throw 'Illegal base64url string'
-			}
+			};
 
 			return decodeURIComponent(escape($window.atob(output)));
 		};
@@ -94,12 +94,12 @@
 			});
 			return q.promise;
 
-		}
+		};
 
 		o.saveToken = function(token) {
 			console.log("DEBUG: UserFactory saveToken called");
 			window.localStorage.setItem("token", token);
-		}
+		};
 
 		$rootScope._user = o.isLoggedIn();
 

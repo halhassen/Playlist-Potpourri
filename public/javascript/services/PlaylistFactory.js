@@ -14,7 +14,7 @@
 				q.resolve(res)
 			});
 			return q.promise;
-		}
+		};
 
 		return o;
 	}
