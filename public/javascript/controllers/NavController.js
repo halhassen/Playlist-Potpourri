@@ -3,19 +3,21 @@
 	angular.module('app')
 	.controller('NavController', NavController);
 
-	NavController.$inject = [];
+	NavController.$inject = ['$state', '$rootScope'];
 
-	function NavController() {
+	function NavController($state, $rootScope) {
 		var vm = this;
-		vm.title = 'Welcome to Your Playlist!';
+		vm.uiRouterState = $state;
+		vm.status = $rootScope._user;
 
 		$("nav ul li").click(function(){
 			var xcoord = $(this).data("xcoord");
-			
-			$("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
+			//using state? find a way to keep white bar on current state
+			$("nav div").stop().animate({marginLeft:xcoord}, 100, "easeInOutExpo");
 			$(this).addClass("active");
-			$("nav ul li").not(this).removeClass("active");
-			
+			$("nav ul li").not(this).removeClass("active");	
 		});
+
+		
 	}
 })();

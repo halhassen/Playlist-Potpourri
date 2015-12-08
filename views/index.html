@@ -18,10 +18,8 @@
 			<nav>
 				<div></div>
 				<ul>
-					<li data-xcoord="0px" class="active">Home</li>
-					<li data-xcoord="160px">About</li>
-					<li data-xcoord="320px">Signup</li>
-					<li data-xcoord="480px">Store</li>
+					<li ui-sref="Home" data-xcoord="0px" class="active">Home</li>
+					<li ui-sref="Register" data-xcoord="160px">Signup</li>
 				</ul>
 			</nav>
 		</section>
@@ -30,17 +28,18 @@
 	<!-- Ext Libs -->
 	<script src="angular/angular.min.js"></script>
 	<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
-	<!-- Angular Material Design -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<!-- Soundcloud -->
+	<script src="http://connect.soundcloud.com/sdk.js"></script>
 	<!-- Global Src -->
 	<script src="/javascript/app.js"></script>
 	<!-- Factories -->
 	<script src="/javascript/services/HomeFactory.js"></script>
+	<script src="/javascript/services/UserFactory.js"></script>
+	<script src="/javascript/services/PlaylistFactory.js"></script>
 	<!-- Controllers -->
-	<script src="/javascript/controllers/HomeController.js"></script>
 	<script src="/javascript/controllers/NavController.js"></script>
+	<script src="/javascript/controllers/PlaylistController.js"></script>	
+	<script src="/javascript/controllers/UserController.js"></script>
 	<!-- jQuery -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>

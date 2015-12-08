@@ -1,0 +1,27 @@
+.player {
+	height: 200px;
+	position: relative;
+	margin-bottom: 50px;
+	margin-top: 75px;
+}
+
+.search {
+	margin-top:200px; 
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.tip {
+	border-radius: 15px 15px;
+	background: silver;
+	opacity: .8;
+	border: solid .5px;
+	margin: auto;
+	position: relative;
+	width: 30%;
+	padding: 15px;
+}
+
+.songLoad {
+	margin-top: 30px;
+}

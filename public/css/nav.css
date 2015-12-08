@@ -1,4 +1,4 @@
-#bg{
+#bg {
   position:fixed;
   left:0;
   top:0;
@@ -16,10 +16,10 @@
 
 section{
   position:relative;
-  width:640px;
-  margin:50px auto;
+  width: 320px;
+  margin: 50px auto;
 }
-nav{
+nav {
   width:100%;
 }
 nav ul li{
@@ -50,12 +50,12 @@ nav ul{
 nav div{
   position:absolute;
   left:0;
-  top:16px;
+  top:1px;
   background: #fff;
   width:162px;
   height:40px;
   z-index:99;
 }
 .active{
-  color:rgba(55, 186, 177, 1);
+  color:rgba(55, 186, 177, 3);
 }
